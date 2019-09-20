@@ -23,13 +23,12 @@ public class Lab3Demo {
         System.out.println("Enter an integer (0-99");
         input = in.nextInt();
 
-        while (input > 99) {
+        while (input <= 99) {
             System.out.println("Invalid input, must be between 0-99");
             input = in.nextInt();
         }
 
         // TODO: Write an algorithm that can count between 00 and input, always in ## format (ie: 00, 01, etc...)
-
         in.close(); // CLOSE SCANNER, SUPER IMPORTANT!
 
     } // end main()
