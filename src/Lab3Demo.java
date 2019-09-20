@@ -7,7 +7,7 @@ public class Lab3Demo {
         // Loops, selectors, casting
 
         // 1. Write a program that displays prime numbers
-        System.out.println("PRIME OR NOT?\nEnter 0 to exit\n\n");
+        System.out.println("--PRIME OR NOT?--\nEnter 0 to exit\n\n");
         System.out.print("Enter an integer: ");
         int input = in.nextInt();
 
@@ -15,29 +15,21 @@ public class Lab3Demo {
         // Could we use do-while here? How would we adapt for it?
         while (input != 0) {
             // TODO: Write an algorithm (using loops) that decides if int is prime or not
-            // Code goes here
-            if (input == 1) {
-                System.out.print("Not a prime number.");
-            } else {
-                System.out.print("Maybe a prime number");
-            }
+        }
 
-            System.out.print("Enter an integer: ");
+
+        // 2. Create a counter up to the number that the user defines
+        System.out.println("\n\n--NUMBER COUNTER--");
+        System.out.println("Enter an integer (0-99");
+        input = in.nextInt();
+
+        while (input > 99) {
+            System.out.println("Invalid input, must be between 0-99");
             input = in.nextInt();
         }
 
-        in.nextLine(); // MUST KEEP: to clear the \n after the int in the Scanner buffer
+        // TODO: Write an algorithm that can count between 00 and input, always in ## format (ie: 00, 01, etc...)
 
-
-        // 2. Create an expression evaluator using a while loop & switch statements
-        String expr;
-        do {
-            // TODO: Break up the string into an expression and then evaluate it
-            System.out.println("\nEnter a mathematical expression to evaluate. q to exit");
-            expr = in.nextLine();
-            System.out.printf("Your expression is: '%s'\nGood job",expr);
-            // Code goes here
-        } while (!expr.equals("q")); // why doesn't this work?
         in.close(); // CLOSE SCANNER, SUPER IMPORTANT!
 
     } // end main()
