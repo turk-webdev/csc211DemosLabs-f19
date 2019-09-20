@@ -26,6 +26,8 @@ public class Lab3Demo {
             input = in.nextInt();
         }
 
+        in.nextLine(); // MUST KEEP: to clear the \n after the int in the Scanner buffer
+
 
         // 2. Create an expression evaluator using a while loop & switch statements
         String expr;
@@ -35,7 +37,7 @@ public class Lab3Demo {
             expr = in.nextLine();
             System.out.printf("Your expression is: '%s'\nGood job",expr);
             // Code goes here
-        } while (expr != "q"); // why doesn't this work?
+        } while (!expr.equals("q")); // why doesn't this work?
         in.close(); // CLOSE SCANNER, SUPER IMPORTANT!
 
     } // end main()
