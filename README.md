@@ -8,5 +8,5 @@ For our course, I will only be using GitHub as a means of sharing my code. You d
 
 Whether it be in your upper division classes or in your work life, you will inevitably develop software alongisde a group of other people, and if each of you go editing files without some way of communicating who is working on what or making which changes where, it is utter chaos and code gets lost all the time.
 
-## How do I use GitHub?
-Simply navigate to the code that we are using for the day's lecture/lab and download it from GitHub. The interface is very user friendly and there is a highly visible "Download" button when viewing each file.
+## How do I use GitHub to get the code?
+Simply navigate to the file you wish to download (in the src folder), click the "Raw" button on the right. This will open the entire file in its own page. From there, we need to highlight all the text (ctrl+A or cmd+A on Mac) and copy+paste it into a Java file. Once we copy the file locally on our computers, change the name of the class to match the file name of the Java file we put it in.
