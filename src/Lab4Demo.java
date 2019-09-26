@@ -18,12 +18,6 @@ import java.util.*;
  */
 
 public class Lab4Demo {
-    int a,b;
-
-    public Lab4Demo() {
-        this.a = 0;
-        this.b = 0;
-    }
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in); // In future exercises, I won't provide this - you guys will be responsible for initializing your own scanners
@@ -48,30 +42,12 @@ public class Lab4Demo {
 
     }
 
-    // Getters & setters. You want these when you have a class with variables attributed to it, because we don't want
-    // external classes directly accessing elements of a certain class without defined pathways from us, the developer.
-    public void setA(int a) {
-        this.a = a;
-    }
-
-    public int getA() {
-        return this.a;
-    }
-
-    public void setB(int b) {
-        this.b = b;
-    }
-
-    public int getB() {
-        return this.b;
-    }
-
     // TODO: We also want subtract(), multiply(), divide(), power()
-    public int add(/* insert args here */) {
+    public static int add(/* insert args here */) {
         return 0; //Fix the return statement
     }
 
-    public void helloWorld(String name) {
+    public static void helloWorld(String name) {
         // TODO: Create a function that prints out "Hello World, I am <name>!"
     }
 
